@@ -6,7 +6,7 @@
   /**
    * Props
    */
-
+  export let autoplay: boolean;
   export let src: string;
   /**
    * States
@@ -94,6 +94,7 @@
     loop={$repeat}
     bind:this={audio}
     {src}
+    {autoplay}
     style="display: none;"
   />
 
